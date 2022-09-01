@@ -4,16 +4,24 @@ import Loader from './Loader.js'
 
 const template = `
 <div id="app">
-  <p className="exemplo">Datepicker</p>
-  <Datepicker v-model="date" :enableTimePicker="false" autoApply></Datepicker>
+  <p className="date__title">Please, select your date:</p>
+  <div className="date__container">
+    <Datepicker v-model="date" :enableTimePicker="false" autoApply></Datepicker>
+  </div>
   <Loader v-if="isLoading"/>
-  <img v-else :src='imgSrc' @click="openModal" />
-  <p v-if="isError">Ops, something went wrong. Please, select a new date.</p>
+  <img className="date__image" v-else :src='imgSrc' @click="openModal" />
+  <p className="date__error" v-if="isError">
+    Ops, something went wrong. Please, select a new date.\n
+    (note that future dates are not allowed)
+  </p>
 </div>`;
 
 const Initial = {
   template,
-  components: { Datepicker: VueDatePicker, Loader },
+  components: { 
+    Datepicker: VueDatePicker, 
+    Loader 
+  },
   data() {
     return {
       isError: false,
@@ -31,7 +39,7 @@ const Initial = {
       this.isLoading = false
     },
     openModal: async function () {
-      const imgURL = this.imageSrc
+      const imgURL = this.imgSrc
       await createModalInstance(imgURL)
     }
   },

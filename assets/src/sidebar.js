@@ -1,5 +1,5 @@
 import Sidebar from './components/Sidebar.js';
-import { client, createModalInstance } from './lib/zafClient.js'
+import { client } from './lib/zafClient.js'
 
 const initSidebar = () => {
     client.on('app.registered', () => {

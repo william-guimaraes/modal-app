@@ -1,0 +1,11 @@
+.date__title, .date__container  {
+    margin-bottom: 8px;
+}
+
+.date__image {
+    cursor: pointer;
+}
+
+.date__error {
+    text-align: center;
+}
