@@ -1,14 +1,10 @@
-# App name
+# Nasa Picture of the Day
 
-[brief description of the app]
+This is a Zendesk Support sidebar app. This app shows the Nasa pictures of the day and allow you to select a different day to check the picture of the selected day.
 
 ### The following information is displayed:
 
-* info1
-* info2
-* info3
+* Date picker, so you can select a different date
+* Picture of the day
 
-Please submit bug reports to [Insert Link](). Pull requests are welcome.
-
-### Screenshot(s):
-[put your screenshots down here.]
+Please submit bug reports to [https://github.com/william-guimaraes/modal-app](). Pull requests are welcome.
