@@ -1,0 +1,1 @@
+export const formatDate = (day) => day.toISOString().split('T')[0]
