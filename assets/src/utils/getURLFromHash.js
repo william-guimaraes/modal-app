@@ -1,1 +1,1 @@
-export const getURLFromHash = () => window.location.hash.split('=')[1]
+export const getURLFromHash = () => window.location.hash.substring(8)

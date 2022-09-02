@@ -33,7 +33,7 @@ const Initial = {
   methods: {
     insertAPodImage: async function () {
       this.isLoading = true
-      const data = await getNasaAPodImage(this.date, true)
+      const data = await getNasaAPodImage(this.date)
       this.isError = data.error
       this.imgSrc = data.url
       this.isLoading = false
