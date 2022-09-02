@@ -4,7 +4,7 @@ This is a Zendesk Support sidebar app. This app shows the Nasa pictures of the d
 
 ### The following information is displayed:
 
-* Date picker, so you can select a different date
+* A Date picker, so you can select a different date
 * Picture of the day
 
 Please submit bug reports to [https://github.com/william-guimaraes/modal-app](). Pull requests are welcome.
